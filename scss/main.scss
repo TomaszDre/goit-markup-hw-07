@@ -1,0 +1,9 @@
+
+@use "./utills/vars.scss" as *;
+@import "./components/navigation";
+@import "./components/page-header";
+
+
+body{
+    color: $defaultColor;
+}
