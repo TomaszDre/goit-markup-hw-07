@@ -1,6 +1,6 @@
 // import wszystkich plików z folderów @import lub @use
 @import "./components/footer";
-@import "./components/page-header";
+@import "./components/header";
 @import "./components/logo";
 @import "./components/hero";
 @import "./components/clients";
@@ -13,7 +13,3 @@
 @import "./components/lorem";
 @import "./components/container";
 @import "./utils/vars";
-
-body {
-    color: red;
-}

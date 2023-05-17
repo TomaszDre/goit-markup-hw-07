@@ -81,8 +81,6 @@ footer:hover {
     color: var(--brand-color-primary);
 }
 
-
-
 /* notatka REDUKCJA MARGINESOW
 margin: -94px; */
 
@@ -91,8 +89,6 @@ margin: -94px; */
     width: 1200px;
     padding: 0 15px;
 }
-
-
 
 p {
     font-family: "Roboto";
@@ -119,7 +115,6 @@ h1 {
 
 .team-title {
     font-weight: 700;
-  
 }
 
 h4 {
@@ -177,7 +172,7 @@ a:focus {
     transform: scale(1.05);
 }
 
-.menu {
+.page-header {
     display: flex;
     height: 80px;
     border-bottom: solid 1px;
@@ -195,57 +190,55 @@ a:focus {
     color: var(--brand-color-primary);
 }
 
-.studio-black {
+.logo--black {
     color: var(--brand-color-logo-black);
 }
 
-.studio-white {
+.logo--white {
     color: var(--brand-color-white);
 }
 
-.top-line {
+.header {
     display: flex;
     align-items: center;
 }
 /* NAVIGATION */
 
-.navigation-list {
+.navigation {
     align-items: center;
     display: flex;
     gap: 46px;
     margin-left: 93px;
 }
 
-.contacts-top-line {
+.page-header__content {
     display: flex;
     gap: 50px;
     margin-left: auto;
 }
 
-
-
-.contacts-item {
+.page-header__link {
     font-weight: 500;
     display: flex;
     align-items: center;
     color: var(--paragraf-text-color);
 }
 
-.contact-set {
+.page-header__overlay {
     transition-property: color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-set:hover,
-.contact-set:focus {
+.page-header__overlay:hover,
+.page-header__overlay:focus {
     --paragraf-text-color: var(--brand-color-primary);
     transform: scale(1.1);
 }
 
 /* ZAMÓW USŁUGĘ */
 
-.decoration {
+.navigation__link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -259,14 +252,14 @@ a:focus {
 
 /* LOREM IPSUM */
 
-.lorem-list {
+.lorem__content {
     font-family: "Roboto";
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.lorem-text {
+.lorem__title {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 10px;
@@ -276,11 +269,9 @@ a:focus {
     margin-top: 30px;
 }
 
-
-
 /* WHAT WE DO */
 
-.what-we-do {
+.what-we-do__content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +279,7 @@ a:focus {
     padding: 0px;
 }
 
-.what-we-do-background {
+.what-we-do__overlay {
     display: flex;
     flex-direction: column;
     padding-bottom: 94px;
@@ -320,8 +311,6 @@ a:focus {
     text-decoration: none;
 }
 
-
-
 .footer-flex {
     display: flex;
 }
@@ -330,11 +319,9 @@ a:focus {
     display: block;
 }
 
-
-
 /* EFEKTYWNE  */
 
-.content {
+.hero__title {
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
@@ -344,12 +331,11 @@ a:focus {
     margin: 0 auto;
     width: 696px;
     color: var(--brand-color-white);
- 
 }
 
 /* OUR TEAM */
 
-.team-title {
+.what-we-do__title {
     font-weight: 700;
     font-size: 36px;
     text-align: center;
@@ -394,8 +380,6 @@ a:focus {
 
 /* button portfolio */
 
-
-
 .buttons-portfolio {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -432,10 +416,6 @@ a:focus {
 }
 
 /* cards portfolio */
-
-.pad-but {
-    padding-top: 0;
-}
 
 .wrap {
     display: flex;
@@ -490,11 +470,10 @@ a:focus {
 
 /* HEADER */
 
-.icon-contact {
+.page-header__icon {
     margin-right: 10px;
     fill: var(--paragraf-text-color);
 }
-
 
 /* MAIN */
 
@@ -515,7 +494,7 @@ a:focus {
     background-repeat: no-repeat;
 }
 
-.icon-properties {
+.lorem__item {
     display: flex;
     justify-content: center;
     padding: 25px 0px;
@@ -529,7 +508,6 @@ a:focus {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-
 }
 
 .jd-text {
@@ -572,7 +550,6 @@ a:focus {
 .icon-class {
     fill: var(--background-icon-color);
     display: block;
-    
 }
 
 .icon-class-footer {
@@ -609,8 +586,6 @@ a:focus {
     transform: scale(1.05);
 }
 
-
-
 .client-icon {
     fill: var(--background-icon-color);
     margin: 16px 32px;
@@ -621,8 +596,6 @@ a:focus {
     fill: var(--brand-color-primary);
     transform: scale(1.05);
 }
-
-
 
 /* Footer */
 
@@ -689,11 +662,11 @@ icon-group5
 
 /* Header */
 
-.active {
+.navigation__item {
     position: relative;
 }
 
-.active::after {
+.navigation__item::after {
     content: "";
     position: absolute;
     background: var(--brand-color-primary);
@@ -704,14 +677,14 @@ icon-group5
     display: block;
 }
 
-.logo-transition {
+.page-header__logo {
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-transition:hover,
-.logo-transition:focus {
+.page-header__logo:hover,
+.page-header__logo:focus {
     transform: scale(1.05);
 }
 
@@ -774,12 +747,12 @@ icon-group5
 
 /* what we do */
 
-.thumb {
+.what-we-do__item {
     position: relative;
     overflow: hidden;
 }
 
-.label {
+.what-we-do__description {
     position: absolute;
     right: 0;
     left: 0;
@@ -796,38 +769,13 @@ icon-group5
     font-size: 14px;
 }
 
-.label1 {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 27px 0px 27px 113px;
-    border-bottom-left-radius: 4px;
-    background: var(--background-color-thumb);
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--brand-color-white);
-    font-size: 14px;
+.what-we-do__description--start {
+    padding-left:  113px;
 }
 
-.label2 {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 27px 0px 27px 94px;
-    border-bottom-left-radius: 4px;
-    background: var(--background-color-thumb);
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--brand-color-white);
-    font-size: 14px;
+.what-we-do__description--end {
+    padding-left:  94px;
+
 }
 
 /* Our team */
@@ -1000,8 +948,6 @@ icon-group5
     display: flex;
     align-items: center;
 }
-
-
 
 /* styl-zapisz się */
 
@@ -1195,7 +1141,6 @@ icon-group5
     fill: var(--brand-color-primary);
 }
 
-
 .checkbox-modal {
     padding-top: 10px;
 }
@@ -1305,4 +1250,3 @@ icon-group5
     /* margin-left: 57px; */
     left: 13px;
 }
-

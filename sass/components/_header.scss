@@ -1,6 +1,6 @@
 // // style header
 
-.menu {
+.page-header {
     display: flex;
     height: 80px;
     border-bottom: solid 1px;
@@ -9,18 +9,18 @@
 
 // navigation
 
-.navigation-list {
+.navigation {
     align-items: center;
     display: flex;
     gap: 46px;
     margin-left: 93px;
 }
 
-.active {
+.navigation__item {
     position: relative;
 }
 
-.active::after {
+.navigation__item::after {
     content: "";
     position: absolute;
     background: var(--brand-color-primary);
@@ -31,7 +31,7 @@
     display: block;
 }
 
-.decoration {
+.navigation__link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -43,34 +43,34 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// contacts
+// contacts header
 
-.contacts-top-line {
+.page-header__content {
     display: flex;
     gap: 50px;
     margin-left: auto;
 }
 
-.contact-set {
+.page-header__overlay {
     transition-property: color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-set:hover,
-.contact-set:focus {
+.page-header__overlay:hover,
+.page-header__overlay:focus {
     --paragraf-text-color: var(--brand-color-primary);
     transform: scale(1.1);
 }
 
-.contacts-item {
+.page-header__link {
     font-weight: 500;
     display: flex;
     align-items: center;
     color: var(--paragraf-text-color);
 }
 
-.icon-contact {
+.page-header__icon {
     margin-right: 10px;
     fill: var(--paragraf-text-color);
 }
