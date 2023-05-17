@@ -343,21 +343,21 @@ a:focus {
     margin-bottom: 50px;
 }
 
-.our-team-background {
+.our-team {
     background-color: var(--brand-color-ordinary);
 }
 
-.our-team-cards {
+.our-team__overlay {
     display: flex;
     gap: 30px;
 }
 
-.our-team {
+.our-team__content {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-.team-card {
+.our-team__meta {
     background-color: var(--brand-color-white);
     width: 270px;
     height: 428px;
@@ -504,13 +504,13 @@ a:focus {
 
 /* Our Team */
 
-.social-links {
+.our-team__item {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
 
-.jd-text {
+.our-team__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -518,7 +518,7 @@ a:focus {
     margin-bottom: 10px;
 }
 
-.social-links-properties {
+.our-team__properties {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -526,28 +526,28 @@ a:focus {
     margin-top: 16px;
 }
 
-.social-links-properties > li,
+.our-team__properties > li,
 .list-icons-footer > li {
     padding: 12px 12px;
     border-radius: 50%;
 }
 
-.social-links-properties li:hover,
-.social-links-properties li:focus {
+.our-team__properties li:hover,
+.our-team__properties li:focus {
     background-color: var(--brand-color-primary);
     --background-icon-color: var(--brand-color-white);
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.job-text {
+.our-team__text {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--paragraf-text-color);
 }
 
-.icon-class {
+.our-team__link {
     fill: var(--background-icon-color);
     display: block;
 }
@@ -563,12 +563,12 @@ a:focus {
     text-align: center;
 }
 
-.clients-list {
+.clients__overlay {
     display: flex;
     justify-content: space-between;
 }
 
-.clients-list-item {
+.clients__item {
     width: 170px;
     height: 92px;
     border: solid 1px;
@@ -579,20 +579,20 @@ a:focus {
     transition-duration: 250ms;
 }
 
-.clients-list-item:hover,
-.clients-list-item:focus {
+.clients__item:hover,
+.clients__item:focus {
     border-color: var(--brand-color-primary);
     --background-icon-color: var(--brand-color-primary);
     transform: scale(1.05);
 }
 
-.client-icon {
+.clients__icon {
     fill: var(--background-icon-color);
     margin: 16px 32px;
 }
 
-.client-icon:hover,
-.client-icon:focus {
+.clients__icon:hover,
+.clients__icon:focus {
     fill: var(--brand-color-primary);
     transform: scale(1.05);
 }
@@ -770,24 +770,23 @@ icon-group5
 }
 
 .what-we-do__description--start {
-    padding-left:  113px;
+    padding-left: 113px;
 }
 
 .what-we-do__description--end {
-    padding-left:  94px;
-
+    padding-left: 94px;
 }
 
 /* Our team */
 
-.team-social-icons {
+.our-team__icons {
     transition-property: color, background-color, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
-.team-social-icons a:hover,
-.team-social-icons a:focus {
+.our-team__icons a:hover,
+.our-team__icons a:focus {
     transform: scale(1.1);
 }
 
