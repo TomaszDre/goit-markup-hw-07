@@ -251,36 +251,3 @@
     text-decoration: underline;
 }
 
-// modal button--------------------------
-
-.button-modal {
-    display: block;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--brand-color-white);
-    background-color: var(--brand-color-primary);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    width: 200px;
-    height: 50px;
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-padding {
-    margin: 30px 0px 0px 124px;
-}
-
-.button-modal:hover,
-.button-modal:focus {
-    cursor: pointer;
-    color: var(--brand-color-white);
-    background-color: var(--brand-color-primary);
-    transform: scale(1.05);
-}

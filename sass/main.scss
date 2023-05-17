@@ -1,9 +1,7 @@
 // import wszystkich plików z folderów @import lub @use
 @import "./components/footer";
-@import "./components/navigation";
 @import "./components/page-header";
 @import "./components/logo";
-@import "./components/links";
 @import "./components/hero";
 @import "./components/clients";
 @import "./components/modal";
@@ -12,7 +10,8 @@
 @import "./components/cards";
 @import "./components/buttons";
 @import "./components/form";
-@import "./components/portfolio";
+@import "./components/lorem";
+@import "./components/container";
 @import "./utils/vars";
 
 body {
