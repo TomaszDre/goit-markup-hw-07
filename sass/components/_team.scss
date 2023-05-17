@@ -1,0 +1,99 @@
+// style our team
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.our-team-background {
+    background-color: var(--brand-color-ordinary);
+}
+
+.our-team-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.our-team {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.team-card {
+    background-color: var(--brand-color-white);
+    width: 270px;
+    height: 428px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0;
+    padding: 0px;
+}
+
+.social-links {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.jd-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.job-text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--paragraf-text-color);
+}
+
+.social-links-properties {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.social-links-properties > li,
+.list-icons-footer > li {
+    padding: 12px 12px;
+    border-radius: 50%;
+}
+
+.social-links-properties li:hover,
+.social-links-properties li:focus {
+    background-color: var(--brand-color-primary);
+    --background-icon-color: var(--brand-color-white);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.team-social-icons {
+    transition-property: color, background-color, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.team-social-icons a:hover,
+.team-social-icons a:focus {
+    transform: scale(1.1);
+}
+
+.icon-class {
+    fill: var(--background-icon-color);
+    display: block;
+}
+
+.icon-class-footer {
+    fill: var(--brand-color-white);
+    display: block;
+}

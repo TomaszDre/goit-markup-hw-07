@@ -1,4 +1,103 @@
 // style footer
-.footer {
-    font-style: "Roboto", "sans-serif";
+
+.footer-flex {
+    display: flex;
+}
+
+.footer-block {
+    display: block;
+}
+
+.footer-trasition {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, transform;
+}
+
+.footer-trasition:hover,
+.footer-trasition:focus {
+    transform: scale(1.05);
+}
+
+// address footer
+
+.address-set {
+    margin-top: 20px;
+}
+
+.address-gap:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-transition {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, transform;
+}
+
+.address-transition:hover,
+.address-transition:focus {
+    transform: scale(1.05);
+}
+
+.address {
+    font-family: var(--main-font);
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-white);
+}
+.footer-address {
+    font-family: var(--main-font);
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: 0.03em;
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+
+// join footer and icons
+
+.footer-join {
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.join-header-footer {
+    color: var(--brand-color-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.footer-icons-properties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-icons-properties li {
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: var(--footer-icon-color);
+}
+
+.list-icons-footer {
+    transition-property: background-color, color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-icons-footer:hover,
+.list-icons-footer:focus {
+    background-color: var(--brand-color-primary);
+    --background-icon-color: var(--brand-color-white);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.icon-class-footer {
+    fill: var(--brand-color-white);
+    display: block;
 }

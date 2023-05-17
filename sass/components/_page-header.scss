@@ -1,4 +1,76 @@
 // // style header
-.page-header {
-    color: red;
+
+.menu {
+    display: flex;
+    height: 80px;
+    border-bottom: solid 1px;
+    border-color: var(--line-color);
+}
+
+// navigation
+
+.navigation-list {
+    align-items: center;
+    display: flex;
+    gap: 46px;
+    margin-left: 93px;
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    background: var(--brand-color-primary);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+    display: block;
+}
+
+.decoration {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-secondary);
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// contacts
+
+.contacts-top-line {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.contact-set {
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-set:hover,
+.contact-set:focus {
+    --paragraf-text-color: var(--brand-color-primary);
+    transform: scale(1.1);
+}
+
+.contacts-item {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: var(--paragraf-text-color);
+}
+
+.icon-contact {
+    margin-right: 10px;
+    fill: var(--paragraf-text-color);
 }

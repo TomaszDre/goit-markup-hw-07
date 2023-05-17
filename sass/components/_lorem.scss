@@ -1,0 +1,26 @@
+// style lorem ipsum
+
+.lorem-list {
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.lorem-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+}
+
+.icon-properties {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+    border-radius: 4px;
+    background: #f5f4fa;
+}

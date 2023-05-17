@@ -1,4 +1,34 @@
 // style logo
+
 .logo {
-    font-size: 14px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-primary);
+}
+
+.studio-black {
+    color: var(--brand-color-logo-black);
+}
+
+.studio-white {
+    color: var(--brand-color-white);
+}
+
+.top-line {
+    display: flex;
+    align-items: center;
+}
+
+.logo-transition {
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-transition:hover,
+.logo-transition:focus {
+    transform: scale(1.05);
 }
