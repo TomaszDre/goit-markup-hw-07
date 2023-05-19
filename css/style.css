@@ -113,9 +113,9 @@ h1 {
     color: #ffffff;
 }
 
-.team-title {
+/* .team-title {
     font-weight: 700;
-}
+} */
 
 h4 {
     font-weight: 500;
@@ -376,6 +376,10 @@ a:focus {
 
 /* button portfolio */
 
+.cards__overlay {
+    padding-top: 0;
+}
+
 .buttons-portfolio {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -413,12 +417,12 @@ a:focus {
 
 /* cards portfolio */
 
-.wrap {
+.cards__content {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
 }
-.header-border {
+.cards__list {
     box-sizing: border-box;
     font-size: 18px;
     background: #ffffff;
@@ -427,14 +431,14 @@ a:focus {
     cursor: pointer;
 }
 
-.header-border:hover,
-.header-border:focus {
+.cards__list:hover,
+.cards__list:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     transform: scale(1.01);
 }
 
-.p {
+.cards__title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -445,7 +449,7 @@ a:focus {
     margin-top: 10px;
 }
 
-.border-caption {
+.cards__item {
     height: 110px;
     display: flex;
     flex-direction: column;
@@ -458,7 +462,7 @@ a:focus {
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
 }
-.no-gap {
+.cards__image {
     display: block;
 }
 
@@ -799,7 +803,7 @@ icon-group5
 
 /* Portfolio */
 
-.box {
+.cards__box {
     position: relative;
     width: 370px;
     height: 294px;
@@ -808,7 +812,7 @@ icon-group5
     overflow: hidden;
 }
 
-.overlay {
+.cards__text {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -821,11 +825,11 @@ icon-group5
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box:hover .overlay {
+.cards__box:hover .cards__text {
     transform: translateX(0);
 }
 
-.overlay > p {
+.cards__text > p {
     color: var(--brand-color-white);
     padding: 49px 45px 49px 24px;
     font-size: 18px;
@@ -845,15 +849,15 @@ icon-group5
     transform: scale(1.05);
 }
 
-.card-transition {
+.cards__style {
     flex-basis: calc((100% - 60px) / 3);
     transition-property: box-shadow, cursor, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
-.card-transition:hover,
-.card-transition:focus {
+.cards__style:hover,
+.cards__style:focus {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
         1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 1px rgba(0, 0, 0, 0.3);
     cursor: pointer;
