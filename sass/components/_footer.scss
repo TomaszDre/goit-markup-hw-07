@@ -1,103 +1,99 @@
 // style footer
 
-.footer-flex {
+.footer__overlay {
     display: flex;
 }
 
-.footer-block {
+.footer__meta {
     display: block;
 }
 
-.footer-trasition {
+.footer__link {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, transform;
 }
 
-.footer-trasition:hover,
-.footer-trasition:focus {
+.footer__link:hover,
+.footer__link:focus {
     transform: scale(1.05);
 }
 
 // address footer
 
-.address-set {
+.address__list {
     margin-top: 20px;
 }
 
-.address-gap:not(:last-child) {
+.address__gap:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.address-transition {
+.address__item {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, transform;
 }
 
-.address-transition:hover,
-.address-transition:focus {
+.address__item:hover,
+.address__item:focus {
     transform: scale(1.05);
 }
 
-.address {
+.address__link {
     font-family: var(--main-font);
     font-style: normal;
     line-height: 1.46;
     letter-spacing: 0.03em;
     color: var(--brand-color-white);
 }
-.footer-address {
-    font-family: var(--main-font);
-    font-style: normal;
-    line-height: 1.46;
-    letter-spacing: 0.03em;
+.address__link--color {
     color: var(--footer-text-color);
     text-decoration: none;
 }
 
 // join footer and icons
 
-.footer-join {
+.footer__content{
     margin-left: 70px;
     margin-top: 10px;
 }
 
-.join-header-footer {
+.footer__title {
     color: var(--brand-color-white);
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
 }
 
-.footer-icons-properties {
+.footer__list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;
 }
 
-.footer-icons-properties li {
+.footer__list li {
     padding: 12px 12px;
     border-radius: 50%;
     background-color: var(--footer-icon-color);
 }
 
-.list-icons-footer {
+.footer__item {
     transition-property: background-color, color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-icons-footer:hover,
-.list-icons-footer:focus {
+.footer__item:hover,
+.footer__item:focus {
     background-color: var(--brand-color-primary);
     --background-icon-color: var(--brand-color-white);
     cursor: pointer;
     transform: scale(1.05);
 }
 
-.icon-class-footer {
+.footer__icon {
     fill: var(--brand-color-white);
     display: block;
 }
