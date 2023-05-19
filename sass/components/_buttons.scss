@@ -2,7 +2,7 @@
 
 // button zamów usługę
 
-.button {
+.hero__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -21,8 +21,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus {
+.hero__button:hover,
+.hero__button:focus {
     cursor: pointer;
     color: var(--brand-color-white);
     background-color: var(--brand-color-primary);
@@ -31,16 +31,16 @@
 
 // buttony portfolio
 
-.buttons-portfolio {
+.filters__list {
     padding-top: 94px;
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-.button-portfolio {
-    font-family: "Roboto";
-    font-style: normal;
+.filters__button {
+    // font-family: "Roboto";
+    // font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -56,8 +56,8 @@
     transition-property: color, background-color, transform;
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
+.filters__button:hover,
+.filters__button:focus {
     transform: scale(1.05);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -68,7 +68,7 @@
 
 // modal button wyślij ----------------------
 
-.button-modal {
+.modal__button {
     display: block;
     font-weight: 700;
     font-size: 16px;
@@ -86,14 +86,16 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-padding {
     margin: 30px 0px 0px 124px;
+    
 }
 
-.button-modal:hover,
-.button-modal:focus {
+// .button-padding {
+//     margin: 30px 0px 0px 124px;
+// }
+
+.modal__button:hover,
+.modal__button:focus {
     cursor: pointer;
     color: var(--brand-color-white);
     background-color: var(--brand-color-primary);
@@ -102,18 +104,18 @@
 
 //  button zapisz się
 
-.button-properties {
+.footer-button {
     margin-left: 12px;
 }
 
-.icon-sign-up {
+.footer-button__icon {
     display: flex;
     fill: var(--brand-color-white);
     position: absolute;
     margin: 13px 8px 13px 148px;
 }
 
-.button-sign {
+.footer-button__label {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -133,8 +135,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-sign:hover,
-.button-sign:focus {
+.footer-button__label:hover,
+.footer-button__label:focus {
     cursor: pointer;
     color: var(--brand-color-white);
     background-color: var(--brand-color-primary);
