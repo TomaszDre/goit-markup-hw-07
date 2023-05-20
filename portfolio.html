@@ -18,7 +18,7 @@
 
     <body>
         <header class="page-header">
-            <div class="header container">
+            <div class="page-header__head container">
                 
                     <a
                     href="https://tomaszdre.github.io/goit-markup-hw-07/"
@@ -53,7 +53,7 @@
         <main class="section">
             <section class="container">
                 
-                <ul class="filters__list">
+                <ul class="filters">
                 <li>
                 <button type="button" class="filters__button">Wszystkie</button></li>
                 <li>
@@ -68,7 +68,7 @@
                 
             </section>
 
-            <section class="cards__overlay">
+            <section class="cards">
                 <ul class="cards__content container">
                    
                     <li class="cards__list cards__style">
@@ -263,7 +263,7 @@
                 </ul>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
 
             <div class="container">
                 <div class="footer__overlay">
@@ -277,7 +277,7 @@
                         </ul>
     
                     <address>
-                        <ul class="address__list"> 
+                        <ul class="address"> 
                             <li class="address__gap address__item">   
                                 <a class="address__link">m. Warszawa, Aleje Jerozolimskie 21</a> 
                             </li>
@@ -336,7 +336,7 @@
                     
                         
                         <form>
-                            <div class="form__overlay">
+                            <div class="form">
                             <h3 class="form__title">Zapisz się do newslettera</h3>
                             <ul class="form__list">
                             <li>
@@ -344,15 +344,18 @@
                             <input class="form__input" type="email" name="email" placeholder="E-mail" />
                             </label>
                             </li>
+
                              <!-- button footer -->
-                             <li class="footer-button">
-                             <svg width="24" height="24" class="footer-button__icon">
-                            <use href="/goit-markup-hw-07/images/icons.svg#icon-send-6"></use>
-                            </svg>
+
+                             <li class="footer-btn">
+                                <svg width="24" height="24" class="footer-btn__icon">
+                                    <use href="/goit-markup-hw-07/images/icons.svg#icon-send-6"></use>
+                                </svg>
                             <button 
-                            class="footer-button__label" type="submit">Zapisz się</button>
+                            class="footer-btn__label" type="submit">Zapisz się</button>
                             </li> 
                             </ul>
+
                         </div>
                         </form>
     

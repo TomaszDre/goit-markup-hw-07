@@ -1,99 +1,138 @@
 // style footer
 
-.footer__overlay {
+.footer {
     display: flex;
-}
 
-.footer__meta {
-    display: block;
-}
+    &__meta {
+        display: block;
+    }
 
-.footer__link {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, transform;
-}
+    &__link {
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: color, transform;
+    }
 
-.footer__link:hover,
-.footer__link:focus {
-    transform: scale(1.05);
+    &__link:hover,
+    &__link:focus {
+        transform: scale(1.05);
+    }
+
+    // join footer and icons
+
+    &__content {
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+
+    &__title {
+        color: $brand-color-white;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    &__list > li {
+        padding: 12px 12px;
+        border-radius: 50%;
+        background-color: $footer-icon-color;
+    }
+
+    &__item {
+        transition-property: background-color, color, transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item:hover,
+    &__item:focus {
+        background-color: $brand-color-primary;
+        $background-icon-color: $brand-color-white;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    &__icon {
+        fill: $brand-color-white;
+        display: block;
+    }
+}
+//  button zapisz się
+
+.footer-btn {
+    margin-left: 12px;
+
+    &__icon {
+        display: flex;
+        fill: $brand-color-white;
+        position: absolute;
+        margin: 13px 8px 13px 148px;
+    }
+
+    &__label {
+        font-weight: $fontMedium;
+        font-size: 16px;
+        line-height: 1.88;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $brand-color-white;
+        background-color: $brand-color-primary;
+        box-shadow: 0px 4px 4px rgba(243, 109, 109, 0.15);
+        border-radius: 4px;
+        border: none;
+        width: 200px;
+        height: 50px;
+        padding-right: 42px;
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__label:hover,
+    &__label:focus {
+        cursor: pointer;
+        color: $brand-color-white;
+        background-color: $brand-color-primary;
+    }
 }
 
 // address footer
 
-.address__list {
+.address {
     margin-top: 20px;
-}
 
-.address__gap:not(:last-child) {
-    margin-bottom: 9px;
-}
+    &__gap:not(:last-child) {
+        margin-bottom: 9px;
+    }
 
-.address__item {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, transform;
-}
+    &__item {
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: color, transform;
+    }
 
-.address__item:hover,
-.address__item:focus {
-    transform: scale(1.05);
-}
+    &__item:hover,
+    &__item:focus {
+        transform: scale(1.05);
+    }
 
-.address__link {
-    font-family: var(--main-font);
-    font-style: normal;
-    line-height: 1.46;
-    letter-spacing: 0.03em;
-    color: var(--brand-color-white);
-}
-.address__link--color {
-    color: var(--footer-text-color);
-    text-decoration: none;
-}
-
-// join footer and icons
-
-.footer__content{
-    margin-left: 70px;
-    margin-top: 10px;
-}
-
-.footer__title {
-    color: var(--brand-color-white);
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
-}
-
-.footer__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.footer__list li {
-    padding: 12px 12px;
-    border-radius: 50%;
-    background-color: var(--footer-icon-color);
-}
-
-.footer__item {
-    transition-property: background-color, color, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__item:hover,
-.footer__item:focus {
-    background-color: var(--brand-color-primary);
-    --background-icon-color: var(--brand-color-white);
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-.footer__icon {
-    fill: var(--brand-color-white);
-    display: block;
+    &__link {
+        font-family: $main-font;
+        font-style: normal;
+        line-height: 1.46;
+        letter-spacing: 0.03em;
+        color: $brand-color-white;
+    }
+    &__link--color {
+        color: $footer-text-color;
+        text-decoration: none;
+    }
 }

@@ -2,38 +2,38 @@
 
 .clients {
     text-align: center;
-}
 
-.clients__overlay {
-    display: flex;
-    justify-content: space-between;
-}
+    &__overlay {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.clients__item {
-    width: 170px;
-    height: 92px;
-    border: solid 1px;
-    border-color: var(--background-icon-color);
-    border-radius: 4px;
-    transition-property: color, transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
+    &__item {
+        width: 170px;
+        height: 92px;
+        border: solid 1px;
+        border-color: $background-icon-color;
+        border-radius: 4px;
+        transition-property: color, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
 
-.clients__item:hover,
-.clients__item:focus {
-    border-color: var(--brand-color-primary);
-    --background-icon-color: var(--brand-color-primary);
-    transform: scale(1.05);
-}
+    &__item:hover,
+    &__item:focus {
+        border-color: $brand-color-primary;
+        $background-icon-color: $brand-color-primary;
+        transform: scale(1.05);
+    }
 
-.clients__icon {
-    fill: var(--background-icon-color);
-    margin: 16px 32px;
-}
+    &__icon {
+        fill: $background-icon-color;
+        margin: 16px 32px;
+    }
 
-.clients__icon:hover,
-.clients__icon:focus {
-    fill: var(--brand-color-primary);
-    transform: scale(1.05);
+    &__icon:hover,
+    &__icon:focus {
+        fill: $brand-color-primary;
+        transform: scale(1.05);
+    }
 }

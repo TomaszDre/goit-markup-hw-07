@@ -1,34 +1,18 @@
 // style logo
 
 .logo {
-    font-family: "Raleway";
-    font-weight: 700;
+    font-family: $secondary-font;
+    font-weight: $fontMedium;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--brand-color-primary);
-}
+    color: $brand-color-primary;
 
-.logo--black {
-    color: var(--brand-color-logo-black);
-}
+    &--black {
+        color: $brand-color-logo-black;
+    }
 
-.logo--white {
-    color: var(--brand-color-white);
-}
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.page-header__logo {
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-header__logo:hover,
-.page-header__logo:focus {
-    transform: scale(1.05);
+    &--white {
+        color: $brand-color-white;
+    }
 }

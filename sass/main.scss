@@ -1,15 +1,15 @@
 // import wszystkich plików z folderów @import lub @use
 @import "./components/footer";
-@import "./components/header";
+@import "./components/page-header";
 @import "./components/logo";
 @import "./components/hero";
 @import "./components/clients";
 @import "./components/modal";
-@import "./components/team";
+@import "./components/our-team";
 @import "./components/what-we-do";
 @import "./components/cards";
-@import "./components/buttons";
 @import "./components/form";
 @import "./components/lorem";
 @import "./components/container";
 @import "./utils/vars";
+@import "./utils/default";

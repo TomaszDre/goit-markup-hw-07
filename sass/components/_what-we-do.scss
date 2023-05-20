@@ -1,50 +1,53 @@
 // style what we do
 
-.what-we-do__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 0px;
-}
-
-.what-we-do__overlay {
+.what-we-do {
     display: flex;
     flex-direction: column;
     padding-bottom: 94px;
-}
 
-.what-we-do__item {
-    position: relative;
-    overflow: hidden;
-}
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $grid-margin;
+        padding: 0px;
+    }
 
-.what-we-do__title {
-    font-weight: 700;
-}
+    &__item {
+        position: relative;
+        overflow: hidden;
+    }
 
-.what-we-do__description {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 27px 0px 27px 90px;
-    border-bottom-left-radius: 4px;
-    background: var(--background-color-thumb);
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--brand-color-white);
-    font-size: 14px;
-}
+    &__title {
+        font-weight: $fontMedium;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
 
-.what-we-do__description--start {
-    padding-left:  113px;
-}
+    &__description {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 27px 0px 27px 90px;
+        border-bottom-left-radius: 4px;
+        background: $background-color-thumb;
+        letter-spacing: 0.03em;
+        font-weight: $fontMedium;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $brand-color-white;
+        font-size: 14px;
+    }
 
-.what-we-do__description--end {
-    padding-left:  94px;
+    &__description--start {
+        padding-left: 113px;
+    }
 
+    &__description--end {
+        padding-left: 94px;
+    }
 }

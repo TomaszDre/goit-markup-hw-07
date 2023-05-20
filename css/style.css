@@ -72,12 +72,12 @@ header:hover {
 }
 
 /* footer global */
-footer {
+.footer {
     padding: 60px 0;
     background-color: var(--brand-color-background);
 }
 
-footer:hover {
+.footer:hover {
     color: var(--brand-color-primary);
 }
 
@@ -198,7 +198,7 @@ a:focus {
     color: var(--brand-color-white);
 }
 
-.header {
+.page-header__head {
     display: flex;
     align-items: center;
 }
@@ -252,7 +252,7 @@ a:focus {
 
 /* LOREM IPSUM */
 
-.lorem__content {
+.lorem {
     font-family: "Roboto";
     display: flex;
     justify-content: center;
@@ -287,7 +287,7 @@ a:focus {
 
 /* Address */
 
-.address__list {
+.address {
     margin-top: 20px;
 }
 
@@ -376,11 +376,11 @@ a:focus {
 
 /* button portfolio */
 
-.cards__overlay {
+.cards {
     padding-top: 0;
 }
 
-.filters__list {
+.filters {
     padding-top: 94px;
     padding-bottom: 50px;
     display: flex;
@@ -960,12 +960,12 @@ icon-group5
     margin-bottom: 20px;
 }
 
-.form__overlay {
+.form {
     margin-left: 78px;
 }
 
 /* przycisk zapisz się */
-.footer-button__label {
+.footer-btn__label {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -985,18 +985,18 @@ icon-group5
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-button__label:hover,
-.footer-button__label:focus {
+.footer-btn__label:hover,
+.footer-btn__label:focus {
     cursor: pointer;
     color: var(--brand-color-white);
     background-color: var(--brand-color-primary);
 }
 
-.footer-button {
+.footer-btn {
     margin-left: 12px;
 }
 
-.footer-button__icon {
+.footer-btn__icon {
     display: flex;
     fill: var(--brand-color-white);
     position: absolute;
@@ -1188,7 +1188,7 @@ icon-group5
 }
 
 /* Create a custom checkbox */
-.checkmark {
+.modal__checkmark {
     position: absolute;
     top: 4px;
     left: 0;
@@ -1201,30 +1201,30 @@ icon-group5
 }
 
 /* On mouse-over, add a grey background color */
-.modal__container:hover input ~ .checkmark {
+.modal__container:hover input ~ .modal__checkmark {
     background-color: var(--brand-color-white);
 }
 
 /* When the checkbox is checked, add a blue background */
-.modal__container input:checked ~ .checkmark {
+.modal__container input:checked ~ .modal__checkmark {
     background-color: #2196f3;
     border-color: var(--brand-color-primary);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.modal__checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
 /* Show the checkmark when checked */
-.modal__container input:checked ~ .checkmark:after {
+.modal__container input:checked ~ .modal__checkmark:after {
     display: block;
 }
 
 /* Style the checkmark/indicator */
-.modal__container .checkmark:after {
+.modal__container .modal__checkmark:after {
     left: 4px;
     top: -1px;
     right: 1px;

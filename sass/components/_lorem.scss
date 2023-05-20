@@ -1,26 +1,26 @@
 // style lorem ipsum
 
-.lorem__content {
-    font-family: "Roboto";
+.lorem {
+    font-family: $main-font;
     display: flex;
     justify-content: center;
-    gap: 30px;
-}
+    gap: $grid-margin;
 
-.lorem__title {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 10px;
-    line-height: 1;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    margin-top: 30px;
-}
+    &__title {
+        text-transform: uppercase;
+        font-weight: $fontMedium;
+        margin-bottom: 10px;
+        line-height: 1;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        margin-top: $grid-margin;
+    }
 
-.lorem__item {
-    display: flex;
-    justify-content: center;
-    padding: 25px 0px;
-    border-radius: 4px;
-    background: #f5f4fa;
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0px;
+        border-radius: 4px;
+        background: $brand-color-ordinary;
+    }
 }
