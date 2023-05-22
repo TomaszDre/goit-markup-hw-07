@@ -28,18 +28,16 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-
-
-    // nie działa fill ani color w overlay, a w zad. 6 działa wtf?
-
+    // nie działa fill ani color w content, a w zad. 6 działa wtf?
 
     &__icon {
         display: block;
         margin-right: 10px;
-        fill: $paragraf-text-color;
+        
     }
 
     &__content {
+        fill: $paragraf-text-color;
         transition-property: color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -48,11 +46,10 @@
     &__content:hover,
     &__content:focus {
         $paragraf-text-color: $brand-color-primary;
-        color: $brand-color-primary;
         transform: scale(1.1);
+        color: $brand-color-primary;
     }
-    }
-
+}
 
 // &__icon:hover,
 // &__icon:focus {
