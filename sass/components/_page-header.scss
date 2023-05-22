@@ -10,50 +10,85 @@
         display: flex;
         align-items: center;
     }
+}
+// contacts header
 
-    // contacts header
-
-    &__content {
-        display: flex;
-        gap: 50px;
-        margin-left: auto;
-    }
-
-    &__overlay {
-        transition-property: color, transform;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__overlay:hover,
-    &__overlay:focus {
-        $paragraf-text-color: $brand-color-primary;
-        transform: scale(1.1);
-    }
+.contacts {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
 
     &__link {
         font-weight: $fontSmall;
         display: flex;
         align-items: center;
         color: $paragraf-text-color;
+        transition-property: color, transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+
+
+    // nie działa fill ani color w overlay, a w zad. 6 działa wtf?
+
+
     &__icon {
+        display: block;
         margin-right: 10px;
         fill: $paragraf-text-color;
     }
 
-    &__logo {
+    &__content {
+        transition-property: color, transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__content:hover,
+    &__content:focus {
+        $paragraf-text-color: $brand-color-primary;
+        color: $brand-color-primary;
+        transform: scale(1.1);
+    }
+    }
+
+
+// &__icon:hover,
+// &__icon:focus {
+//     fill: $brand-color-primary;
+// }
+
+// style logo
+
+.logo {
+    font-family: $secondary-font;
+    font-weight: $fontMedium;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $brand-color-primary;
+
+    &__item {
         transition-property: transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__logo:hover,
-    &__logo:focus {
+    &__item:hover,
+    &__item:focus {
         transform: scale(1.05);
     }
+
+    &--black {
+        color: $brand-color-logo-black;
+    }
+
+    &--white {
+        color: $brand-color-white;
+    }
 }
+
 // navigation
 
 .navigation {
